@@ -1,22 +1,16 @@
+import RepoCard from './RepoCard';
+
 export default function RepoList({ repos }) {
   if (!repos || repos.length === 0) {
-    return <p className="text-gray-500">No repositories found.</p>;
+    return <p className="text-gray-500 text-center">No repositories found.</p>;
   }
 
   return (
     <div>
-      <h3 className="f4 mb-3">Top Repositories</h3>
-      <div className="d-flex flex-wrap">
-        {repos.map(r => (
-          <div key={r.id} className="Box mr-3 mb-3" style={{ width: 'calc(50% - 12px)' }}>
-            <div className="Box-body">
-              <a href={r.html_url} target="_blank" className="text-bold text-blue">
-                {r.name}
-              </a>
-              <p className="text-small text-gray">{r.description || 'No description'}</p>
-              <span className="text-small text-gray">⭐ {r.stargazers_count}</span>
-            </div>
-          </div>
+      <h3 className="text-xl font-semibold mb-4">Top Repositories</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {repos.map((repo) => (
+          <RepoCard key={repo.id} repo={repo} />
         ))}
       </div>
     </div>
