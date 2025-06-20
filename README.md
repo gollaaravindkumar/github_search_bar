@@ -1,31 +1,43 @@
-# GitHub User Search App
+# 🔍 GitHub User Search App
 
-A responsive web app to search GitHub users, view their profile and top repositories — with dark mode, pagination, and mouse-tracking visuals.
+A responsive React.js application that allows users to search for GitHub profiles and view detailed user information and top repositories.
 
-### 🚀 Features
+### 🚀 Live Demo
+👉 [https://github-search-app-plum.vercel.app](https://github-search-app-plum.vercel.app)
 
-- 🔍 Search GitHub users
-- 💼 Display profile info (name, avatar, location, bio, followers)
-- 🌟 Top repositories sorted by stars
-- 🌗 Light/Dark mode toggle
-- 🎨 Animated background with mouse tracking
-- 📱 Mobile-first responsive layout
-- 📚 Pagination with page numbers
-- 🔒 Secure API requests using token & `.env`
+---
 
-### 🧑‍💻 Tech Stack
+## ✨ Features
 
-- React + Vite
-- Tailwind CSS
-- GitHub REST API
+- 🔎 Search GitHub users by username
+- 👤 View public profile info (avatar, name, bio, location, followers)
+- 📦 List top repositories sorted by stars
+- 🌗 Dark/light mode toggle
+- 🎨 Animated background effects
+- 📱 Responsive mobile-first layout
+- 🔢 Pagination for repositories with page numbers
+- 🧠 Error handling for invalid usernames and API issues
 
-### 📦 Setup & Installation
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** (with Vite)
+- **Tailwind CSS**
+- **GitHub REST API**
+- **Vercel** for deployment
+
+---
+
+## 🧪 How to Run Locally
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/your-username/github-user-search.git
 cd github-user-search
+
+# 2. Install dependencies
 npm install
 
-▶️ Run Dev Server
-
+# 3. Start development server
 npm run dev
