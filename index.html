@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="auto" data-dark-theme="dark_dimmed">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="https://github.githubassets.com/favicons/favicon.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Search</title>
+
+    <!-- Primer CSS for GitHub-like styling -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@primer/css@^22/dist/primer.css"
+    />
+  </head>
+
+  <body class="application-main">
+    <!-- GitHub-style header -->
+    <header class="Header px-3">
+      <div class="Header-item d-flex flex-items-center">
+        <img
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          alt="GitHub Logo"
+          width="32"
+          height="32"
+          class="mr-2"
+        />
+        <a class="Header-link f4 text-bold" href="/">
+          GitHub User Search
+        </a>
+      </div>
+      <div class="Header-item ml-auto">
+        <button id="darkToggle" class="btn">🌗 Toggle Theme</button>
+      </div>
+    </header>
+
+    <!-- React App root -->
+    <div id="root" class="container-xl py-4"></div>
+
+    <!-- React entry -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Theme toggle logic -->
+    <script>
+      const btn = document.getElementById('darkToggle');
+      btn.addEventListener('click', () => {
+        const mode = document.documentElement.getAttribute('data-color-mode');
+        const next = mode === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-color-mode', next);
+      });
+    </script>
+  </body>
+</html>

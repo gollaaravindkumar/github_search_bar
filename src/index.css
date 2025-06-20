@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom dark mode background fix */
+body {
+  @apply bg-white text-black dark:bg-[#0d1117] dark:text-white transition-colors duration-500;
+}
