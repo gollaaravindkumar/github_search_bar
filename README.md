@@ -8,10 +8,6 @@ A responsive React.js application that allows users to search for GitHub profile
 ---
 
 
-
-https://github.com/user-attachments/assets/8e317954-9d13-4bd2-a505-010ab4d80db6
-
-
 ## ✨ Features
 
 - 🔎 Search GitHub users by username
@@ -46,4 +42,10 @@ npm install
 
 # 3. Start development server
 npm run dev
+```
+
+## 🎥 Demo
+
+
+https://github.com/user-attachments/assets/8e317954-9d13-4bd2-a505-010ab4d80db6
 
